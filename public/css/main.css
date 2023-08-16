@@ -2,7 +2,6 @@
 
 :root {
   --primary-color: #0a5bac;
-
   --secondary-color: #1abbee;
   --secondary-color-two: rgba(26, 187, 238, 0.1);
   --text-danger: #f67b7f;
@@ -111,7 +110,7 @@ nav ul li {
   /* width: 662px; */
   /* height: 112px; */
   border-radius: 72px;
-  padding: 10px;
+  padding: 16px;
   border: 10px solid inherit;
   outline: 1px solid #1abbee;
   background: linear-gradient(
@@ -145,6 +144,7 @@ nav ul li {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  padding: 24px;
 }
 .search-btn-with-icon {
   width: 60px;
