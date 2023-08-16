@@ -4,7 +4,7 @@
   --primary-color: #0a5bac;
 
   --secondary-color: #1abbee;
-  --secondary-color-two: rgba(26, 187, 238, 0.24);
+  --secondary-color-two: rgba(26, 187, 238, 0.1);
   --text-danger: #f67b7f;
 }
 
@@ -48,6 +48,16 @@ nav ul li {
   border: 2px solid #fff !important;
 }
 
+.nav-link {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 /* ==== Reuseable classes ===== */
 
 .heading-1 {
@@ -58,6 +68,9 @@ nav ul li {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+.text-italic {
+  font-style: italic;
 }
 .cus-text-lg {
   color: #1abbee;
@@ -91,13 +104,12 @@ nav ul li {
 }
 
 .service-section {
-  background-color: rgba(26, 187, 238, 0.24);
-  /* opacity: 0.1; */
+  background-color: var(--secondary-color-two);
 }
 
 .search-btn-cont {
-  /* width: 662px;
-  height: 112px; */
+  /* width: 662px; */
+  /* height: 112px; */
   border-radius: 72px;
   padding: 10px;
   border: 10px solid inherit;
@@ -126,6 +138,13 @@ nav ul li {
   background: var(--secondary-color);
   color: white;
   margin-right: -22px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 .search-btn-with-icon {
   width: 60px;
@@ -159,8 +178,17 @@ nav ul li {
     ),
     #fff;
   filter: drop-shadow(0px 7px 23px rgba(26, 187, 238, 0.15));
-  transform: translate(100%, -100%);
+  transform: translate(120%, -100%);
   margin-bottom: -25%;
+
+  box-shadow: 0px 7px 23px rgba(26, 187, 238, 0.15);
+
+  background: linear-gradient(
+      0deg,
+      rgba(26, 187, 238, 0.24) 0%,
+      rgba(26, 187, 238, 0.24) 100%
+    ),
+    #fff;
 }
 
 .service-card__logo__md {
@@ -194,7 +222,7 @@ nav ul li {
 .service-card-2__text__1 {
   text-align: center;
   font-family: Roboto;
-  font-size: 80px;
+  font-size: 80px !important;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -230,6 +258,8 @@ nav ul li {
 
 footer svg {
   opacity: 0.5;
+
+  border-radius: 50%;
 }
 footer svg:hover {
   opacity: 1;
